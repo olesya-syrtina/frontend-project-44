@@ -1,42 +1,28 @@
-import readlineSync from 'readline-sync';
-import sayHello from '../cli.js';
+import mainEngine from '../index.js';
 
-const startCalculator = () => {
-  const name = sayHello();
-  console.log('What is the result of the expression?');
+const description = 'What is the result of the expression?';
 
-  const roundCount = 3;
+const getData = () => {
+  const leftNumber = Math.floor(Math.random() * 10);
+  const rightNumber = Math.floor(Math.random() * 10);
+  const operators = ['+', '-', '*'];
+  const operator = operators[Math.floor(Math.random() * 2)];
 
-  for (let i = 0; i < roundCount; i += 1) {
+  let rightAnswerNum = 0;
 
-    const leftNumber = Math.floor(Math.random() * 10);
-    const rightNumber = Math.floor(Math.random() * 10);
-    const operators = ['+', '-', '*'];
-    const operator = operators[Math.floor(Math.random() * 2)];
-
-    let rightAnswer = 0;
-
-    if (operator === '+') {
-      rightAnswer = leftNumber + rightNumber;
-    } else if (operator === '-') {
-      rightAnswer = leftNumber - rightNumber;
-    } else {
-      rightAnswer = leftNumber * rightNumber;
-    }
-
-    console.log(`Question: ${leftNumber} ${operator} ${rightNumber} `);
-
-    const playerAnswer = readlineSync.question('Your answer: ');
-
-    if (parseInt(playerAnswer, 10) === rightAnswer) {
-      console.log('Correct!');
-    } else {
-      console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'`);
-      console.log(`Let's try again, ${name}!`);
-      return;
-    }
+  if (operator === '+') {
+    rightAnswerNum = leftNumber + rightNumber;
+  } else if (operator === '-') {
+    rightAnswerNum = leftNumber - rightNumber;
+  } else {
+    rightAnswerNum = leftNumber * rightNumber;
   }
-  console.log(`Congratulations, ${name}!`);
+  const rightAnswer = rightAnswerNum.toString();
+
+  const question = `${leftNumber} ${operator} ${rightNumber}`;
+  return [question, rightAnswer];
 };
+
+const startCalculator = () => mainEngine(getData, description);
 
 export default startCalculator;
