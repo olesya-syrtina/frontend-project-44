@@ -10,9 +10,9 @@ const getData = () => {
 
   let rightAnswerNum = 1;
 
-  for (let i = 1; i <= leftNumber, i <= rightNumber; i += 1) {
+  for (let i = 1; i <= leftNumber && i <= rightNumber; i += 1) {
     if (leftNumber % i === 0 && rightNumber % i === 0) {
-        rightAnswerNum = i;
+      rightAnswerNum = i;
     }
   }
 
