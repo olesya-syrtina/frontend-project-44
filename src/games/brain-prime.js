@@ -14,6 +14,10 @@ const getData = () => {
     }
   }
 
+  if (randomNum === 1) {
+    rightAnswer = 'no';
+  }
+
   return [question, rightAnswer];
 };
 
