@@ -3,7 +3,7 @@ import mainEngine from '../index.js';
 const description = 'What number is missing in the progression?';
 
 const getData = () => {
-  const startNumber = Math.floor(Math.random() * 10);
+  const startNumber = Math.floor(Math.random() * 10) + 1;
   const multiplyNumber = Math.floor(Math.random() * 5) + 1;
   const numArray = [];
 

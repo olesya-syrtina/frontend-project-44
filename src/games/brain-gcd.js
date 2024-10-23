@@ -3,8 +3,8 @@ import mainEngine from '../index.js';
 const description = 'Find the greatest common divisor of given numbers.';
 
 const getData = () => {
-  const leftNumber = Math.floor(Math.random() * 10);
-  const rightNumber = Math.floor(Math.random() * 10);
+  const leftNumber = Math.floor(Math.random() * 10) + 1;
+  const rightNumber = Math.floor(Math.random() * 10) + 1;
 
   const question = `${leftNumber} ${rightNumber}`;
 
