@@ -2,6 +2,6 @@
 
 /* eslint-disable indent */
 
-import startProgress from '../src/games/brain-progression.js';
+import startProgression from '../src/games/brain-progression.js';
 
-startProgress();
+startProgression();

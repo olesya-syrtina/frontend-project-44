@@ -1,6 +1,6 @@
 import mainEngine from '../index.js';
 
-const description = 'Find the greatest common divisor of given numbers.';
+const description = 'What number is missing in the progression?';
 
 const getData = () => {
   const startNumber = Math.floor(Math.random() * 10);
@@ -26,6 +26,6 @@ const getData = () => {
   return [question, rightAnswer];
 };
 
-const startProgress = () => mainEngine(getData, description);
+const startProgression = () => mainEngine(getData, description);
 
-export default startProgress;
+export default startProgression;
