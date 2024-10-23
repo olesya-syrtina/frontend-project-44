@@ -3,6 +3,38 @@
 
 <a href="https://codeclimate.com/github/olesya-syrtina/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/a1c7d1e394f23301c04a/maintainability" /></a>
 
+
+## Setup
+
+```bash
+make install
+```
+
+## Run brain-games
+
+```bash
+brain-even
+```
+
+```bash
+brain-calc
+```
+
+```bash
+brain-gcd
+```
+
+```bash
+brain-progression
+```
+
+```bash
+brain-prime
+```
+
+Демонстрация установки и запуска игры
+<a href="https://asciinema.org/a/Q7OrAfedjiKP0KIYCzhJ1OK3f">https://asciinema.org/a/Q7OrAfedjiKP0KIYCzhJ1OK3f</a>
+
 Демонстрация игры: "Проверка на точность"
 <a href="https://asciinema.org/a/pkKjATC87huvGedLMZHUjdVP0">https://asciinema.org/a/pkKjATC87huvGedLMZHUjdVP0</a>
 

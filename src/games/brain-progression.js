@@ -6,13 +6,14 @@ const getData = () => {
   const startNumber = Math.floor(Math.random() * 10) + 1;
   const multiplyNumber = Math.floor(Math.random() * 5) + 1;
   const numArray = [];
+  const progressionLength = 10;
 
-  const hiddenNumIndex = Math.floor(Math.random() * 10);
+  const hiddenNumIndex = Math.floor(Math.random() * progressionLength);
 
   let rightAnswerNum = 0;
   let question = '';
 
-  for (let i = 0; i < 10; i += 1) {
+  for (let i = 0; i < progressionLength; i += 1) {
     let num = startNumber + (multiplyNumber * i);
     if (i === hiddenNumIndex) {
       rightAnswerNum = num;
