@@ -7,7 +7,7 @@ const getData = () => {
   const question = randomNum;
   let rightAnswer = 'yes';
 
-  for (let i = 2; i < randomNum / 2; i += 1) {
+  for (let i = 2; i <= randomNum / 2; i += 1) {
     if (randomNum % i === 0) {
       rightAnswer = 'no';
       break;
