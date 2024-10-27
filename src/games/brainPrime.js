@@ -1,14 +1,17 @@
-import mainEngine from '../index.js';
+import runMainEngine from '../index.js';
+import getRandomNum from '../helper.js';
 
 const description = 'Find theAnswer "yes" if given number is prime. Otherwise answer "no".';
 
-const getData = () => {
-  const randomNum = Math.floor(Math.random() * 20) + 1;
+const isModulo = (num, i) => (num % i === 0);
+
+const getRound = () => {
+  const randomNum = getRandomNum(1, 20);
   const question = randomNum;
   let rightAnswer = 'yes';
 
   for (let i = 2; i <= randomNum / 2; i += 1) {
-    if (randomNum % i === 0) {
+    if (isModulo) {
       rightAnswer = 'no';
       break;
     }
@@ -21,6 +24,6 @@ const getData = () => {
   return [question, rightAnswer];
 };
 
-const startPrime = () => mainEngine(getData, description);
+const startPrime = () => runMainEngine(getRound, description);
 
 export default startPrime;
