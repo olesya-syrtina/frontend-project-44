@@ -8,7 +8,6 @@ const hasCommonDivider = (div, number1, number2) => (number1 % div === 0 && numb
 const getRound = () => {
   const firstNumber = getRandomNum(1, 20);
   const secondNumber = getRandomNum(1, 20);
-
   const question = `${firstNumber} ${secondNumber}`;
 
   let rightAnswerNum = 1;
