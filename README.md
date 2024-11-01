@@ -17,7 +17,8 @@ make install
 ```
 
 Демонстрация установки и запуска игры
-<a href="https://asciinema.org/a/Q7OrAfedjiKP0KIYCzhJ1OK3f" target="_blank"><img src="https://asciinema.org/a/Q7OrAfedjiKP0KIYCzhJ1OK3f.svg" /></a>
+
+<a href="https://asciinema.org/a/ZsGHbOLzfczIROixCGIaYMZfa" target="_blank"><img src="https://asciinema.org/a/ZsGHbOLzfczIROixCGIaYMZfa.svg" /></a>
 
 # Игры
 <p id="games-description" ></p>
@@ -28,32 +29,32 @@ make install
     <p>Определение чётного числа.</p>
     <p>Демонстрация игры: "Проверка на точность"
 
-<a href="https://asciinema.org/a/pkKjATC87huvGedLMZHUjdVP0" target="_blank"><img src="https://asciinema.org/a/pkKjATC87huvGedLMZHUjdVP0.svg" /></a></p>
+<a href="https://asciinema.org/a/C4lwpJB5Oqjqz0ntV4CDjOJ1P" target="_blank"><img src="https://asciinema.org/a/C4lwpJB5Oqjqz0ntV4CDjOJ1P.svg" /></a>
     
 
 *   **brain-calc**
     <p>Вычисление результата случайных арифметических операций.</p>
     <p>Демонстрация игры: "Калькулятор"
 
-<a href="https://asciinema.org/a/V0RTRdLFjrPV1XdTp7f8IatAP" target="_blank"><img src="https://asciinema.org/a/V0RTRdLFjrPV1XdTp7f8IatAP.svg" /></a></p>
+<a href="https://asciinema.org/a/81DolWwDw8ah5nHPR2WVqVBW7" target="_blank"><img src="https://asciinema.org/a/81DolWwDw8ah5nHPR2WVqVBW7.svg" /></a>
 
 
 *   **brain-gcd**
     <p>Вычисление наибольшего общего делителя двух чисел.</p>
     <p>Демонстрация игры: "НОД"
 
-<a href="https://asciinema.org/a/PiJh54KXgqcUQdUiqb6urCcoA" target="_blank"><img src="https://asciinema.org/a/PiJh54KXgqcUQdUiqb6urCcoA.svg" /></a></p>
+<a href="https://asciinema.org/a/ErE3iNmrR7SHIeerIJVC4ym41" target="_blank"><img src="https://asciinema.org/a/ErE3iNmrR7SHIeerIJVC4ym41.svg" /></a>
 
 
 *   **brain-progression**
     <p>Определение пропущенного члена прогрессии.</p>
     <p>Демонстрация игры: "Арифметическая прогрессия"
 
-<a href="https://asciinema.org/a/1HWAi9EmeH2MFDESyJsu7kKri" target="_blank"><img src="https://asciinema.org/a/1HWAi9EmeH2MFDESyJsu7kKri.svg" /></a></p>
+<a href="https://asciinema.org/a/krrQuhe5KRWLsUQx6zTPVKwJW" target="_blank"><img src="https://asciinema.org/a/krrQuhe5KRWLsUQx6zTPVKwJW.svg" /></a>
 
 
 *   **brain-prime**
     <p>Определение простого числа</p>
     <p>Демонстрация игры: "Простое ли число?"
 
-<a href="https://asciinema.org/a/DJ0N3dCp88PdlqobU52eJiKLo" target="_blank"><img src="https://asciinema.org/a/DJ0N3dCp88PdlqobU52eJiKLo.svg" /></a></p>
+<a href="https://asciinema.org/a/HIh9kDe9dcDWhfdcVZfsxKGOx" target="_blank"><img src="https://asciinema.org/a/HIh9kDe9dcDWhfdcVZfsxKGOx.svg" /></a>
