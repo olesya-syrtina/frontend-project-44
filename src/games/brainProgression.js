@@ -17,13 +17,13 @@ const getRound = () => {
   const startNumber = getRandomNum(1, 10);
   const multiplyNumber = getRandomNum(1, 5);
   const progressionLength = 10;
-  const hiddenNumIndex = getRandomNum(0, progressionLength - 1);
-  const numArray = getProgression(startNumber, multiplyNumber, progressionLength);
-  const answerNum = numArray[hiddenNumIndex];
+  const progression = getProgression(startNumber, multiplyNumber, progressionLength);
+  const hiddenNumIndex = getRandomNum(0, progression.length - 1);
+  const answerNum = progression[hiddenNumIndex];
 
-  numArray[hiddenNumIndex] = '..';
+  progression[hiddenNumIndex] = '..';
 
-  const question = numArray.toString().replace(/,/g, ' ');
+  const question = progression.join(' ').toString();
   const answer = answerNum.toString();
   return [question, answer];
 };

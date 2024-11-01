@@ -5,23 +5,27 @@ const description = 'Find theAnswer "yes" if given number is prime. Otherwise an
 
 const isModulo = (num, i) => (num % i === 0);
 
-const getRound = () => {
-  const randomNum = getRandomNum(1, 20);
-  const question = randomNum;
-  let rightAnswer = 'yes';
-
+const isPrime = (randomNum) => {
+  let answer = 'yes';
   for (let i = 2; i <= randomNum / 2; i += 1) {
     if (isModulo(randomNum, i)) {
-      rightAnswer = 'no';
+      answer = 'no';
       break;
     }
   }
 
-  if (randomNum === 1) {
-    rightAnswer = 'no';
+  if (randomNum <= 1) {
+    answer = 'no';
   }
+  return answer;
+};
 
-  return [question, rightAnswer];
+const getRound = () => {
+  const randomNum = getRandomNum(1, 20);
+  const question = randomNum;
+  const answer = isPrime(randomNum);
+
+  return [question, answer];
 };
 
 const startPrime = () => runMainEngine(getRound, description);
