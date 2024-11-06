@@ -3,14 +3,16 @@ import getRandomNum from '../helper.js';
 
 const description = 'What is the result of the expression?';
 
-const getAnswerNum = (operator, number1, number2) => {
+const calculate = (operator, number1, number2) => {
   switch (operator) {
     case '+':
       return number1 + number2;
     case '-':
       return number1 - number2;
-    default:
+    case '*':
       return number1 * number2;
+    default:
+      throw new Error(`Unknown operator: '${operator}'!`);
   }
 };
 
@@ -20,7 +22,7 @@ const getRound = () => {
   const operators = ['+', '-', '*'];
   const operator = operators[getRandomNum(0, operators.length - 1)];
 
-  const answerNum = getAnswerNum(operator, number1, number2);
+  const answerNum = calculate(operator, number1, number2);
 
   const answer = answerNum.toString();
 
